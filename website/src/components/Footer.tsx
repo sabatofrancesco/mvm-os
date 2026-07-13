@@ -1,0 +1,1 @@
+export function Footer(){return <footer><div className="footer-brand"><strong>MVM</strong><span>Primary Packaging for Beauty Brands</span></div><div className="footer-meta"><a href="mailto:amministrazione@mvmpackaging.com">amministrazione@mvmpackaging.com</a><span>© 2026 MVM</span></div></footer>}

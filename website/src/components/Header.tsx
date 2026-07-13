@@ -1,0 +1,1 @@
+export function Header() { return (<header className="site-header"><a href="#top" className="brand">MVM</a><nav><a href="#expertise">Expertise</a><a href="#collection">Lip Balm</a><a href="#process">Process</a><a href="#contact">Contact</a></nav></header>); }

@@ -1,0 +1,7 @@
+- Brand: MVM
+- Domain: mvmpackaging.com
+- Payoff: Primary Packaging for Beauty Brands
+- Positioning: Primary Packaging Partner
+- Initial focus: Lip Balm
+- Source manufacturer: Grioni
+- Commercial supplier: MYC, where applicable

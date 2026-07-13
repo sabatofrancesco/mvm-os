@@ -1,0 +1,1 @@
+export function FinalCTA(){return <section className="final-cta" id="contact"><p className="eyebrow">Start a conversation</p><h2>Ready to build your next beauty packaging project?</h2><a className="button button-primary" href="mailto:amministrazione@mvmpackaging.com">Contact MVM</a></section>}
