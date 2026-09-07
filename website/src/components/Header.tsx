@@ -1,1 +1,1 @@
-export function Header() { return (<header className="site-header"><a href="/#top" className="brand">MVM</a><nav><a href="/#expertise">Expertise</a><a href="/products">Products</a><a href="/#process">Process</a><a href="/#contact">Contact</a></nav></header>); }
+export function Header() { return (<header className="site-header"><a href="/" className="brand">MVM</a><nav><a href="/about">About</a><a href="/about#capabilities">Capabilities</a><a href="/products">Products</a><a href="/project">Start a Project</a></nav></header>); }
