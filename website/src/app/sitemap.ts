@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {products} from "@/data/products";
+export default function sitemap():MetadataRoute.Sitemap{const base="https://www.mvmpackaging.com";return [{url:base,priority:1},{url:`${base}/about`,priority:.8},{url:`${base}/products`,priority:.9},{url:`${base}/project`,priority:.9},{url:`${base}/privacy`,priority:.3},{url:`${base}/legal`,priority:.3},...products.map(product=>({url:`${base}/products/${product.slug}`,priority:.7}))]}
