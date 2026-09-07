@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { products } from "@/data/products";
 import styles from "./products.module.css";
 
 const categories = [
@@ -20,8 +21,32 @@ export default function ProductsPage() {
       <section className={styles.hero}>
         <p className={styles.eyebrow}>MVM Product Portfolio</p>
         <h1>Primary packaging across beauty categories.</h1>
-        <p className={styles.intro}>Explore the MVM portfolio by application. Detailed product references, technical documents and decoration information will be progressively published as each item is verified.</p>
+        <p className={styles.intro}>Explore the MVM portfolio by application. Selected references are already available online, while the catalogue continues to expand as technical information is verified.</p>
       </section>
+
+      <section className={styles.selected}>
+        <div className={styles.selectedHeading}>
+          <p className={styles.eyebrow}>Selected References</p>
+          <h2>Products ready to explore.</h2>
+        </div>
+        <div className={styles.productGrid}>
+          {products.map((product) => (
+            <a className={styles.productCard} href={`/products/${product.slug}`} key={product.reference}>
+              <div className={styles.productVisual}><span>MVM</span></div>
+              <div className={styles.productMeta}>
+                <span>{product.category}</span>
+                <span>{product.reference}</span>
+              </div>
+              <h3>{product.name}</h3>
+              <div className={styles.productSpecs}>
+                {product.capacity && <span>{product.capacity}</span>}
+                {product.material && <span>{product.material}</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <section className={styles.categories}>
         {categories.map(([id, name, description], index) => (
           <article className={styles.category} id={id} key={id}>
@@ -30,7 +55,7 @@ export default function ProductsPage() {
               <h2>{name}</h2>
               <p>{description}</p>
             </div>
-            <span className={styles.status}>Product references in verification</span>
+            <span className={styles.status}>Portfolio expanding</span>
           </article>
         ))}
       </section>
